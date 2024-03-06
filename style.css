@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 1em;
+    font-family: "trebuchet MS", Helvetica, sans-serif;
+    background: #111111;
+    color: #f5f5f5;
+}
+#cabecalho{
+    margin: 0 auto;
+    height: 120px;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-width: 1200px;
+    position: fixed;
+    background-color: #111111;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 0 10px 0 #363636;
+}
+#cabecalho a{
+    text-decoration: none;
+    padding: 25px;
+}
+#nome{
+    float: left;
+    color: #f5f5f5;
+    padding: 40px 60px;
+}
+#nome a:link, #nome a:visited{
+    color: #f5f5f5
+}
+#menu{
+    float: right;
+    padding: 50px 0;
+}
+#menu a:link, #menu a:visited{
+    color: #9b9b9b;
+}
+#menu a:hover{
+    color: #20a6ff;
+}
+#contato{
+    float: right;
+    padding: 15px;
+    margin: 35px 60px;
+    border-radius: 50px;
+    background-color: #20a6ff
+}
+#contato a:link, #contato a:visited{
+    font-weight: bold;
+    color: #000000;
+}
+#contato a:hover{
+    color: #f5f5f5;
+}
+#sobre-mim{
+    margin: 0 auto;
+    width: 1200px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+#sobre-mim-texto{
+    float: right;
+    margin-right: 100px;
+    padding: 15px 30px;
+}
+#sobre-mim-nome{
+    color: #20a6ff;
+}
+#sobre-mim-foto img{
+    float: left;
+    margin-left: 100px;
+    border: 2px solid #20a6ff;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 0 #156aa3;
+}
+#formacao{
+    margin: 0 auto;
+    width: 1200px;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+#formacao-titulo{
+    padding: 170px 0 100px 0;
+}
+#formacao-titulo span{
+    color: #20a6ff;
+}
+.formacoes{
+    border: 2px solid #20a6ff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 #156aa3;
+    width: 300px;
+    text-align: center;
+    padding: 10px 20px 20px;
+    margin: 60px 28px;
+    float: left;
+    height: 280px;
+}
+#portifolio{
+    margin: 0px auto;
+    width: 1200px;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+#portifolio-titulo{
+    padding: 170px 0 100px 0;
+}
+#portifolio-titulo span{
+    color: #20a6ff;
+}
+
+.projetos{
+    border: 2px solid #20a6ff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 #156aa3;
+    width: 300px;
+    text-align: center;
+    padding: 10px 20px 20px;
+    margin: 60px 28px;
+    float: left;
+    height: 400px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.projetos img{
+    margin: 10px;
+    border-radius: 20px;
+}
+.projetos:hover {
+    transform: scale(1.07);
+}

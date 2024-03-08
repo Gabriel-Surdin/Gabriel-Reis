@@ -2,6 +2,13 @@
     margin: 0;
     padding: 0;
 }
+@font-face{
+    font-family: 'Guazhiru';
+    src: url('fonts/guazhiru-font/Guazhiru-3gPz.ttf') format("truetype"),
+    url('fonts/guazhiru-font/GuazhiruItalic-xVaR.ttf') format("truetype"),
+    url('fonts/guazhiru-font/GuazhiruItalicOutlined-pVKZ.ttf') format("truetype"),
+    url('fonts/guazhiru-font/GuazhiruRegularOutlined-Dzr0.ttf') format("truetype");
+}
 body{
     font-size: 1em;
     font-family: "trebuchet MS", Helvetica, sans-serif;
@@ -10,7 +17,7 @@ body{
 }
 #cabecalho{
     margin: 0 auto;
-    height: 120px;
+    height: 80px;
     top: 0;
     left: 0;
     right: 0;
@@ -24,37 +31,28 @@ body{
     text-decoration: none;
     padding: 25px;
 }
-#nome{
+#logo{
     float: left;
     color: #f5f5f5;
-    padding: 40px 60px;
+    padding: 0 60px;
+    font-family: 'Guazhiru';
+    font-size: 2em;
 }
-#nome a:link, #nome a:visited{
-    color: #f5f5f5
+#logo span{
+    color: #20a6ff;
+}
+#logo a:link, #logo a:visited{
+    color: #f5f5f5;
 }
 #menu{
     float: right;
-    padding: 50px 0;
+    padding: 30px 60px ;
 }
 #menu a:link, #menu a:visited{
     color: #9b9b9b;
 }
 #menu a:hover{
     color: #20a6ff;
-}
-#contato{
-    float: right;
-    padding: 15px;
-    margin: 35px 60px;
-    border-radius: 50px;
-    background-color: #20a6ff
-}
-#contato a:link, #contato a:visited{
-    font-weight: bold;
-    color: #000000;
-}
-#contato a:hover{
-    color: #f5f5f5;
 }
 #sobre-mim{
     margin: 0 auto;
@@ -79,23 +77,26 @@ body{
     box-shadow: 0 0 15px 0 #156aa3;
 }
 #formacao{
-    margin: 0 auto;
-    width: 1200px;
+    margin: 0 auto; 
+    width: 100vw;
+    min-width: 1200px;
     height: 100vh;
     display: flex;
     text-align: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #20a6ff;
+    color: #111111;
+    box-shadow: 0 0 25px 0 #156aa3;
 }
-#formacao-titulo{
-    padding: 170px 0 100px 0;
-}
-#formacao-titulo span{
-    color: #20a6ff;
+#formacao span{
+    color: #f5f5f5;
 }
 .formacoes{
-    border: 2px solid #20a6ff;
+    border: 2px solid #f5f5f5;
     border-radius: 20px;
-    box-shadow: 0 0 10px 0 #156aa3;
+    box-shadow: 0 0 10px 0 #b4b4b4;
     width: 300px;
     text-align: center;
     padding: 10px 20px 20px;
@@ -104,20 +105,18 @@ body{
     height: 280px;
 }
 #portifolio{
-    margin: 0px auto;
+    margin: 0 auto; 
     width: 1200px;
     height: 100vh;
     display: flex;
     text-align: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-#portifolio-titulo{
-    padding: 170px 0 100px 0;
-}
-#portifolio-titulo span{
+#portifolio span{
     color: #20a6ff;
 }
-
 .projetos{
     border: 2px solid #20a6ff;
     border-radius: 20px;
@@ -128,7 +127,7 @@ body{
     margin: 60px 28px;
     float: left;
     height: 400px;
-    transition: transform 0.3s;
+    transition: 0.3s;
     cursor: pointer;
 }
 .projetos img{
@@ -137,4 +136,58 @@ body{
 }
 .projetos:hover {
     transform: scale(1.07);
+}
+#contato{
+    width: 100vw;
+    min-width: 1200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #20a6ff;
+    color: #111111;
+    box-shadow: 0 0 25px 0 #156aa3;
+}
+#contato span{
+    color: #f5f5f5;
+}
+#contato form{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 60px 0 0 0;
+}
+#contato label{
+    margin-bottom: 5px;
+}
+#contato input, #contato textarea{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #b4b4b4;
+    margin-bottom: 10px;
+    color: #111111;
+    background-color: #f5f5f5;
+    font-size: 18px;
+}
+#contato textarea{
+    height: 100px;
+    resize: vertical;
+    font-family: "trebuchet MS", Helvetica, sans-serif;
+}
+#contato button{
+    background-color: #f5f5f5;
+    color: #111111;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 10px auto 0;
+    transition: 0.3s;
+    width: 200px;
+}
+#contato button:hover{
+    color: #0073b7;
 }

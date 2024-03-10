@@ -175,6 +175,7 @@ body{
 #contato textarea{
     height: 100px;
     resize: vertical;
+    overflow-y: scroll;
     font-family: "trebuchet MS", Helvetica, sans-serif;
 }
 #contato button{

@@ -39,7 +39,7 @@ body{
     font-size: 2em;
 }
 #logo span{
-    color: #20a6ff;
+    color: #206eff;
 }
 #logo a:link, #logo a:visited{
     color: #f5f5f5;
@@ -52,7 +52,7 @@ body{
     color: #9b9b9b;
 }
 #menu a:hover{
-    color: #20a6ff;
+    color: #206eff;
 }
 #sobre-mim{
     margin: 0 auto;
@@ -67,12 +67,12 @@ body{
     padding: 15px 30px;
 }
 #sobre-mim-nome{
-    color: #20a6ff;
+    color: #206eff;
 }
 #sobre-mim-foto img{
     float: left;
     margin-left: 100px;
-    border: 2px solid #20a6ff;
+    border: 2px solid #206eff;
     border-radius: 20px;
     box-shadow: 0 0 15px 0 #156aa3;
 }
@@ -86,7 +86,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #20a6ff;
+    background-color: #206eff;
     color: #111111;
     box-shadow: 0 0 25px 0 #156aa3;
 }
@@ -115,10 +115,10 @@ body{
     align-items: center;
 }
 #portifolio span{
-    color: #20a6ff;
+    color: #206eff;
 }
 .projetos{
-    border: 2px solid #20a6ff;
+    border: 2px solid #206eff;
     border-radius: 20px;
     box-shadow: 0 0 10px 0 #156aa3;
     width: 300px;
@@ -145,7 +145,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #20a6ff;
+    background-color: #206eff;
     color: #111111;
     box-shadow: 0 0 25px 0 #156aa3;
 }

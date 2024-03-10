@@ -78,7 +78,7 @@ body::-webkit-scrollbar-thumb {
 #sobre-mim-nome{
     color: #206eff;
 }
-#sobre-mim img{
+#sobre-mim-foto img{
     float: left;
     margin-left: 100px;
     border: 2px solid #206eff;

@@ -1,7 +1,9 @@
+/* Redefinir margens e paddings para uma base limpa */
 *{
     margin: 0;
     padding: 0;
 }
+/* Fonte customizada para logo - Guazhiru */
 @font-face{
     font-family: 'Guazhiru';
     src: url('fonts/guazhiru-font/Guazhiru-3gPz.ttf') format("truetype"),
@@ -9,13 +11,15 @@
     url('fonts/guazhiru-font/GuazhiruItalicOutlined-pVKZ.ttf') format("truetype"),
     url('fonts/guazhiru-font/GuazhiruRegularOutlined-Dzr0.ttf') format("truetype");
 }
+/* Estilos do corpo da página */
 body{
-    font-size: 1em;
+    font-size: 1em; /* Tamanho base da fonte */
     font-family: "trebuchet MS", Helvetica, sans-serif;
-    background: #111111;
-    color: #f5f5f5;
-    overflow-x: hidden;
+    background: #111111; /* Cor de fundo */
+    color: #f5f5f5; /* Cor do texto */
+    overflow-x: hidden; /* Ocultar barra de rolagem horizontal */
 }
+/* Estilos para a barra de rolagem no corpo da página */
 body::-webkit-scrollbar {
     width: 5px;
     background-color: transparent;
@@ -24,6 +28,7 @@ body::-webkit-scrollbar-thumb {
     background-color: #C0C0C0;
     border-radius: 10px;
 }
+/* Seção do cabeçalho */
 #cabecalho{
     margin: 0 auto;
     height: 80px;
@@ -34,12 +39,13 @@ body::-webkit-scrollbar-thumb {
     position: fixed;
     background-color: #111111;
     border-radius: 0 0 20px 20px;
-    box-shadow: 0 0 10px 0 #363636;
+    box-shadow: 0 0 10px 0 #363636; /* Efeito de iluminação sutil para separar o cabeçalho dos conteúdos de uma forma mais clara*/
 }
 #cabecalho a{
     text-decoration: none;
     padding: 25px;
 }
+/* Seção da logo */
 #logo{
     float: left;
     color: #f5f5f5;
@@ -48,21 +54,23 @@ body::-webkit-scrollbar-thumb {
     font-size: 2em;
 }
 #logo span{
-    color: #206eff;
+    color: #206eff; /* Cor de destaque para detalhes do logo */
 }
 #logo a:link, #logo a:visited{
-    color: #f5f5f5;
+    color: #f5f5f5; /* Herdar cor do texto para links do logo */
 }
+/* Seção do menu */
 #menu{
     float: right;
     padding: 30px 60px ;
 }
 #menu a:link, #menu a:visited{
-    color: #C0C0C0;
+    color: #C0C0C0; /* Cor do link do menu */
 }
 #menu a:hover{
-    color: #206eff;
+    color: #206eff; /* Cor do link do menu ao passar o mouse */
 }
+/* Seção Sobre Mim */
 #sobre-mim{
     margin: 0 auto;
     width: 1200px;
@@ -76,15 +84,16 @@ body::-webkit-scrollbar-thumb {
     padding: 15px 30px;
 }
 #sobre-mim-nome{
-    color: #206eff;
+    color: #206eff; /* Cor de destaque para o nome */
 }
 #sobre-mim-foto img{
     float: left;
     margin-left: 100px;
-    border: 2px solid #206eff;
+    border: 2px solid #206eff; /* Borda da foto com cor de destaque */
     border-radius: 20px;
-    box-shadow: 0 0 15px 0 #156aa3;
+    box-shadow: 0 0 15px 0 #156aa3; /* Efeito de iluminação para destacar a foto */
 }
+/* Seção Formação */
 #formacao{
     margin: 0 auto; 
     width: 100vw;
@@ -92,20 +101,20 @@ body::-webkit-scrollbar-thumb {
     height: 100vh;
     display: flex;
     text-align: center;
-    flex-direction: column;
+    flex-direction: column; /* Organiza os elementos em coluna, um abaixo do outro */
     justify-content: center;
     align-items: center;
     background-color: #206eff;
     color: #111111;
-    box-shadow: 0 0 25px 0 #156aa3;
+    box-shadow: 0 0 25px 0 #156aa3; /* Efeito de iluminação na seção para uma transição suave entre seções */
 }
 #formacao span{
-    color: #f5f5f5;
+    color: #f5f5f5; /* Cor de destaque para títulos da seção */
 }
 .formacoes{
     border: 2px solid #f5f5f5;
     border-radius: 20px;
-    box-shadow: 0 0 10px 0 #b4b4b4;
+    box-shadow: 0 0 10px 0 #b4b4b4; /* Efeito de iluminação nas formações para destaque */
     width: 300px;
     text-align: center;
     padding: 10px 20px 20px;
@@ -113,58 +122,60 @@ body::-webkit-scrollbar-thumb {
     float: left;
     height: 280px;
 }
+/* Seção Portfólio */
 #portifolio{
     margin: 0 auto; 
     width: 1200px;
     height: 100vh;
     display: flex;
     text-align: center;
-    flex-direction: column;
+    flex-direction: column; /* Organiza os elementos em coluna, um abaixo do outro */
     justify-content: center;
     align-items: center;
 }
 #portifolio span{
-    color: #206eff;
+    color: #206eff; /* Cor de destaque para título da seção */
 }
 .projetos{
     border: 2px solid #206eff;
     border-radius: 20px;
-    box-shadow: 0 0 10px 0 #156aa3;
+    box-shadow: 0 0 10px 0 #156aa3; /* Efeito de iluminação nos projetos para destaque */
     width: 300px;
     text-align: center;
     padding: 10px 20px 20px;
     margin: 60px 28px;
     float: left;
     height: 400px;
-    cursor: pointer;
+    cursor: pointer; /* Indicador que os projetos são clicaveis */
 }
 .projetos img{
     margin: 10px;
     border-radius: 20px;
 }
 .projetos:hover {
-    transform: scale(1.07);
-    transition: 0.3s;
+    transform: scale(1.07); /* Efeito de inflar ao passar o mouse sobre os projetos */
+    transition: 0.3s; /* Transição suave ao inflar */
 }
+/* Seção Contato */
 #contato{
     width: 100vw;
     min-width: 1200px;
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column; /* Organiza os elementos em coluna, um abaixo do outro */
+    justify-content: center; 
     align-items: center;
     background-color: #206eff;
     color: #111111;
-    box-shadow: 0 0 25px 0 #156aa3;
+    box-shadow: 0 0 25px 0 #156aa3; /* Efeito de iluminação na seção para uma transição suave entre seções */
 }
 #contato span{
-    color: #f5f5f5;
+    color: #f5f5f5; /* Cor de destaque para título da seção */
 }
 #contato form{
     width: 600px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Organiza os elementos em coluna, um abaixo do outro */
     margin: 60px 0 0 0;
 }
 #contato label{
@@ -175,7 +186,7 @@ body::-webkit-scrollbar-thumb {
     padding: 5px;
     border: 1px solid #f5f5f5;
     border-radius: 5px;
-    box-shadow: 0 0 15px #b4b4b4;
+    box-shadow: 0 0 15px #b4b4b4; /* Efeito de iluminação sutil nos inputs e textarea */
     margin-bottom: 10px;
     color: #111111;
     background-color: #f5f5f5;
@@ -186,6 +197,7 @@ body::-webkit-scrollbar-thumb {
     resize: none;
     font-family: "trebuchet MS", Helvetica, sans-serif;
 }
+/* Estilos para a barra de rolagem no campo de mensagem */
 #contato textarea::-webkit-scrollbar {
     width: 5px;
     background-color: transparent;
@@ -200,9 +212,9 @@ body::-webkit-scrollbar-thumb {
     padding: 10px 20px;
     border: none;
     border-radius: 50px;
-    cursor: pointer;
+    cursor: pointer; /* Indicador que o botão "Enviar" é clicavel */
     margin: 10px auto 0;
-    transition: 0.3s;
+    transition: 0.3s; /* Transição suave de cores ao passar o mouse */
     width: 200px;
 }
 #contato button:hover{
